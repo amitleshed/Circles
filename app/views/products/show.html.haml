@@ -1,0 +1,55 @@
+.product_headline_wrapper
+	.center
+		%h1 #{@product.title}
+		.image_and_desc
+			%imageshow=image_tag @product.image.url(:custom)
+			%product_desc= simple_format(@product.description)	
+		.price_quantity
+			.product_quantity
+				#{@product.quantity} UNITS
+			.product_price
+				#{number_to_currency(@product.price)}
+		.cic_countdown
+			.product_cic
+				#{(@product.circle.customers.count)} CUSTOMERS
+			.product_countdown
+				#countdown
+					%digits
+						%span.days
+						%pcd DAYS
+					%digits
+						%span.hours
+						%pcd HRS
+					%digits
+						%span.minutes
+						%pcd MINS
+					%digits
+						%span.seconds
+						%pcd SECS
+		%br
+		= link_to @product.category.name, @product.category
+		%br
+		#{link_to @product.supplier.first_name + " " + @product.supplier.last_name, @product.supplier}
+		%br
+		#{link_to @product.supplier.city, root_path}
+		
+		
+	.product_buttons
+		- if @product.supplier == current_supplier
+			
+			= link_to "Edit", edit_product_path, class: "button4"
+			
+			= link_to "Back", root_path, class: "button4"
+			
+		- elsif customer_signed_in? 
+			- if (@product.circle).customer_in_circle?(current_customer)
+				= link_to "Congrats, You're In This Circle!", root_path, class: "button4"
+			- else
+				= link_to "JOIN CIRCLE NOW", add_customer_circle_path(@product.circle), class: "button4"
+		- else
+			= link_to 'Join', new_customer_registration_path, class: "button4"
+			= link_to 'Back', root_path, class: "button4"
+			
+
+
+

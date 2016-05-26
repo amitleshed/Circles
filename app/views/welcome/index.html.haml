@@ -1,0 +1,43 @@
+#banner
+	.banner_content
+		%h1 circles
+		%p Perfectly Shaped Market
+		.search
+			= form_tag search_products_path, method: :get, role: "search" do 
+				%p= text_field_tag :search, params[:search], placeholder: "What are you looking for?"
+
+#product_view
+	- @products.each do |product|
+		.product_each
+			.product_image
+				= link_to (image_tag product.image.url(:tiny)), product, popup: true, class: "product"
+				.pop-up
+					%t1 #{product.title} 
+					%br
+					%popinfo #{number_to_currency(product.price) } 
+					%popinfo 2 Days
+					%popinfo #{product.quantity} Left 
+					
+
+
+#callouts
+	.wrapper
+		.callout_title
+			%p Better Shop Together.
+		.callout
+			%icon= image_tag("circle.png")
+			%h2 Join Circle 
+			%p Connects you with like-minded shoppers so that you could share your passion for quality products and find the right one for you.
+		.callout
+			%icon= image_tag("sharing.png")
+			%h2 Sharing Is Growing
+			%p Shopping together allows you to get the products you want at an unbeatable price-point, thanks to the power of the crowd.
+		.callout
+			%icon= image_tag("lowestPrice.png")
+			%h2 Pay Less
+			%p Does not charge any fees. Creating the first soverign commerce-space in human history.
+
+%footer
+	%p &copy; 2015 circlesmarket inc.
+	
+

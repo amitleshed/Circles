@@ -1,0 +1,32 @@
+#banner_customer
+	.banner_content_customer
+		%h6 Better Shop Together.
+		.search
+			= form_tag search_products_path, method: :get, role: "search" do 
+				%p= text_field_tag :search, params[:search], placeholder: "What are you looking for?"
+
+#product_view
+	- @products.each do |product|
+		.product_each
+			.product_image
+				= link_to (image_tag product.image.url(:tiny)), product
+#callouts
+	.wrapper
+		.callout_title
+			%p Buy Together, Pay Less.
+		.callout
+			%icon= image_tag("circle.jpeg")
+			%h2 Join a Circle 
+			%p Connects you with like-minded shoppers so that you could share your passion for quality products and find the right one for you.
+		.callout
+			%icon= image_tag("share.jpeg")
+			%h2 Sharing is Growing
+			%p Shopping together allows you to get the products you want at an unbeatable price-point, thanks to the power of the crowd.
+		.callout
+			%icon= image_tag("payless.jpeg")
+			%h2 Lowest Price Possible 
+			%p Does not charge any fees. Creating the first soverign commerce-space in human history.
+
+%footer
+	%p &copy; 2015 circles, inc.
+	

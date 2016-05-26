@@ -1,0 +1,150 @@
+#banner {
+	background-image: url("circlesbg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 100%;
+	min-height: 550px;
+	display: table;
+	.banner_content {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		h1 {
+			color: white;
+			letter-spacing: 5px;
+			font-size: 8rem;
+			margin: 0;
+			margin-top: 1em;
+			font-weight: 200;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+			
+			
+		}
+		p {
+			font-size: 1.55rem;
+			margin: 0 0 2.5rem 0;
+			color: white;
+			letter-spacing: 4px;
+			font-weight: 300;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+
+
+		}
+
+	}
+}
+
+
+
+
+#callouts {
+	background-color: $orange;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 100%;
+	min-height: 300px;
+	display: table;
+	.callout_title {
+		p {
+			font-size: 3rem;
+			text-align: center;
+			font-weight: 200;
+			color: #fff;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+			letter-spacing: 0.2rem;
+
+
+		}
+		
+	}
+	.callout {
+		text-align: center;
+		width: 33.33%;
+		float: left;
+		
+
+
+
+		h2 {
+			
+			color: #fff;
+			margin-bottom: 0;
+			font-size: 1.4rem;
+			font-weight: 300;
+			
+		}
+		p {
+			color: $light_gray;
+			font-size: 1rem;
+			font-weight: 300;
+
+		}
+	}
+}
+
+.search {
+	margin-bottom: 6rem;
+}
+
+
+.search input[type="text"] {
+	
+    background: no-repeat 10px 6px white;
+    border: 0 none;
+    font: 15px Arial,Helvetica,Sans-serif;
+    color: gray;
+    width: 550px;
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 1px 0px rgba(50, 50, 50, 0.25);
+	-moz-box-shadow:    2px 2px 1px 0px rgba(50, 50, 50, 0.25);
+	box-shadow:         2px 2px 1px 0px rgba(50, 50, 50, 0.25);
+
+    &:hover {
+
+    }
+}
+
+.text {
+		color: black;
+		font-weight: 100;
+		font-size: 2.2rem;
+		letter-spacing: 1px;
+		margin-top: 1.5rem;
+}
+
+.pop-up {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 75px;
+  padding: 10px;
+  background: $gray;
+  color: #fff;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
+  border-radius: 2%;
+  opacity: 0.87;
+
+
+  t1 {
+  	font-size: 15px;
+  	text-align: center;
+  	letter-spacing: 1px;
+  	font-weight: 600;
+
+
+  }
+  
+  popinfo {
+  	font-size: 15px;
+  	text-align: center;
+  	width: 33.33%;
+  	float: left;
+  	padding-top: 1rem;
+  }
+}
+  	
+
+
+

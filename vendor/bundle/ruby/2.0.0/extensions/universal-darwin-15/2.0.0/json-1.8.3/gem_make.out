@@ -1,0 +1,17 @@
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling generator.c
+In file included from generator.c:1:
+In file included from ./../fbuffer/fbuffer.h:5:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/include/ruby-2.0.0/ruby.h:33:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/include/ruby-2.0.0/ruby/ruby.h:24:10: fatal error: 'ruby/config.h' file not found
+#include "ruby/config.h"
+         ^
+1 error generated.
+make: *** [generator.o] Error 1
+
+make failed, exit code 2

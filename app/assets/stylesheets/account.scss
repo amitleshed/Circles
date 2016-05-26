@@ -1,0 +1,104 @@
+.edit_wrapper {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 3.5rem;
+	border: 1px solid $light_gray;
+	background-color: white;
+	margin-bottom: 3.5rem;
+	border-radius: 5px;
+	h1 {
+			font-size: 3rem;
+			margin-bottom: 1.25rem;
+			padding-bottom: 1rem;
+			border-bottom: 2px solid $orange;
+			font-weight: 100;
+			text-align: center;
+			margin-right: 2.5rem;
+			margin-left: 2.5rem;
+	}
+	
+
+}
+
+.edit_inputs {
+	margin: 0rem;
+	margin-right: 5rem;
+	margin-left: 5rem;
+	.edit_input {
+		width: 50%;
+		padding: 0.5rem;
+		float: left;
+		padding-right: 2rem;
+		padding-left: 2rem;
+	}
+}
+.sign_in_wrapper {
+		width: 70%;
+		margin: 0 auto;
+		margin-top: 3.5rem;
+		border: 1px solid $light_gray;
+		background-color: white;
+		margin-bottom: 5rem;
+		border-radius: 5px;
+		padding-bottom: 3rem;
+		padding-right: 3rem;
+		padding-left: 3rem;
+        min-height: 300px;
+}
+
+.sign_in_inputs {
+		
+		padding: 1rem 1%;
+		padding-right: 2rem;
+		padding-left: 2rem;
+		width: 50%;
+		float: left;
+	}
+.sign_in_actions {
+		margin-top: -1em;
+		width: 50%;
+		float: right;
+	}
+.signup_wrapper {
+		width: 70%;
+		margin: 0 auto;
+		margin-top: 3.5rem;
+		border: 1px solid $light_gray;
+		background-color: white;
+		margin-bottom: 5rem;
+		border-radius: 5px;
+		padding-bottom: 3rem;
+		padding-right: 3rem;
+		padding-left: 3rem;
+        min-height: 300px;
+        h4 {
+        	border-bottom: 1px solid $orange;
+        	
+        }
+}
+
+.signup_inputs {
+		padding: 1.5rem;
+		.signup_input {
+		width: 50%;
+		padding: 0.4rem;	
+		margin-left: 11rem;	
+		}
+	}
+.signup_actions {
+
+		
+		text-align: center;
+		
+		
+	}
+
+
+
+
+
+
+
+
+
+

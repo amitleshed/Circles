@@ -1,0 +1,43 @@
+!!!
+%html
+%head
+	%title circles | Perfectly Shaped Market
+	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+	= javascript_include_tag 'application', 'data-turbolinks-track' => true
+	= csrf_meta_tags
+%body
+	%header
+		.header_inner
+			%logo
+				= link_to image_tag("logo.png"), root_path
+			%leftnav
+				= link_to "circles", root_path
+
+			
+			%rightnav
+				= link_to "Become a supplier", new_product_path
+				- if customer_signed_in? 
+					
+					= link_to "Browse Circles", products_path
+					= link_to "Account", edit_customer_registration_path
+					= link_to "Sign Out", destroy_customer_session_path, method: :delete
+					
+				- elsif supplier_signed_in?
+					
+					= link_to "View Circles", products_path
+					= link_to "Account", edit_supplier_registration_path
+					= link_to "Sign Out", destroy_supplier_session_path, method: :delete
+					
+
+				- else
+					
+					= link_to "Customer Sign In", new_customer_session_path
+					= link_to "Supplier Sign In", new_supplier_session_path
+
+					
+					
+			
+	#notice_wrapper
+		
+	= yield
+

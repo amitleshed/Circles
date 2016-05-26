@@ -1,0 +1,4 @@
+#category_view
+	- @category.children.each do |subcategory| 
+		.category_each
+			= link_to(subcategory.name, subcategory)

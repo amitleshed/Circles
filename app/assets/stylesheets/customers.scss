@@ -1,0 +1,151 @@
+#banner_customer{
+		background-image: url("customersBG.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 100%;
+	min-height: 550px;
+	display: table;
+	.banner_content_customer {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		h6 {
+			color: #fff;
+			letter-spacing: 5px;
+			font-size: 4rem;
+			margin: 0;
+			margin-top: 1em;
+			font-weight: 200;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+			padding-bottom: 1em;
+			
+			
+		}
+		p {
+			font-size: 1.55rem;
+			margin: 0 0 2.5rem 0;
+			color: white;
+			letter-spacing: 4px;
+			font-weight: 300;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+
+
+		}
+
+	}
+}
+#customerc {
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 100%;
+	min-height: 400px;
+	display: table;
+	.customer_content {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		h1 {
+			color: orange;
+			letter-spacing: 7px;
+			font-size: 5rem;
+			margin: 0;
+			margin-top: 1em;
+			font-weight: 100;
+			
+		}
+		p {
+			font-size: 1.4rem;
+			margin: 0 0 2.5rem 0;
+			color: orange;
+			letter-spacing: 3px;
+			font-weight: 300;
+
+
+		}
+
+	}
+}
+
+
+.customer_div0 {
+	
+
+	h1 {
+			color: $orange;
+			letter-spacing: 0px;
+			font-size: 3rem;
+			margin: 0;
+			margin-top: 1rem;
+			padding-top: 4rem;
+
+			font-weight: 200;
+			text-align: center;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	}
+	p {
+			color: $gray-light;
+			font-size: 1.5rem;
+			text-align: center;
+			font-weight: 100;
+			letter-spacing: 10px;
+			margin-top: 0.0rem;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	}
+}
+
+.customer_div1 {
+	min-height: 400px;
+	background-color: $gray-lighter;
+	
+	
+	.customer_details {
+		
+		float: left;
+		padding-top: 6rem;
+		padding-left: 6rem;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+
+
+		f {
+			font-weight: 200;
+			color: #fff;
+			font-size: 2rem;
+
+		}
+	}
+
+	.customer_imageshow {
+		padding-top: 5em;
+		.imageshow {
+			width: 200px;
+			height: 200px;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 50%;
+			border: 1px solid $gray-lighter;
+			background-color: #fff;
+			transition: .3s;
+			-webkit-transition: .2s;
+			-moz-transition: .2s;
+			-o-transition: .2s;
+			&:hover {
+				box-shadow: 0px 0px 37px -11px rgba(0,0,0,0.15);
+				border: 1px solid $orange;
+			}
+		}
+		.mileage {
+			text-align: center;
+
+			mile {
+				font-weight: 200;
+				font-size: 25px;
+
+			}
+		}
+	}
+
+}	
+

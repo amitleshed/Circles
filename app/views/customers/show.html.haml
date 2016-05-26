@@ -1,0 +1,14 @@
+.customer_div0
+	%h1 #{@customer.first_name + " " + @customer.last_name}
+	%p Customer
+.customer_div1
+	.customer_details
+		%f #{@customer.city}
+		%br
+		%f #Fashion #Electronics
+		= render 'follow_form' if customer_signed_in?
+	
+	.customer_imageshow
+		.imageshow
+		.mileage
+			%mile Mileage - 1,450

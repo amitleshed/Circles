@@ -1,0 +1,32 @@
+#banner_supplier
+	.banner_content_supplier
+		%h1 Large Quantities, Lightning-Fast.
+		.search
+			= form_tag search_products_path, method: :get, role: "search" do 
+				%p= text_field_tag :search, params[:search], placeholder: "What are you looking for?"
+		.circlebtn
+			= link_to "New Circle", new_product_path, class:"button5"
+
+#product_view_supplier
+	- @products.each do |product|
+		.product_each_supplier
+			.product_image
+				= link_to (image_tag product.image.url(:tiny)), product
+#callouts_supplier
+	.wrapper
+		.callout_title_supplier
+			%p How It Works.
+		.callout_supplier
+			%icon= image_tag("overStocked.png")
+			%h2 Overstocked
+			%p 
+		.callout_supplier
+			%icon= image_tag("createCircle.png")
+			%h2 Create Circle
+		.callout_supplier
+			%icon= image_tag("deliver.png")
+			%h2 Deliver
+%footer
+	%p &copy; 2015 circles, inc.
+	
+

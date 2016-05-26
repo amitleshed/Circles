@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+
+gem "rails", "~> 3.1.0"
+gem "acts_as_tree", path: "../"
+gem "i18n", "< 0.7"
+
+gemspec path: "../"

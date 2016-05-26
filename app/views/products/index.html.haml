@@ -1,0 +1,10 @@
+#product_view
+	.wrapper
+		- @products.each do |product|
+			.product_each
+				.product_image
+					= link_to (image_tag product.image.url(:tiny)), product
+
+
+
+	

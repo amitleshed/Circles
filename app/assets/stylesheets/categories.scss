@@ -1,0 +1,31 @@
+#category_view {
+	background-color: $light_gray;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 100%;
+	min-height: 300px;
+	display: table;
+	.category_each {
+		text-align: center;
+		width: 33.333%;
+		padding: 1.5rem 1%;
+		float: left;
+		border: 1px solid $light_gray;
+		border-radius: 0%;
+		width: 256px;
+		height: 256px;
+		margin: 0rem;
+		padding-top: 5.5rem;
+		background-color: #fff;
+		transition: .3s;
+		-webkit-transition: .2s;
+		-moz-transition: .2s;
+		-o-transition: .2s;
+		&:hover {
+			border: 1px solid $orange;
+			box-shadow: 0px 0px 37px -11px rgba(0,0,0,0.20);
+		}
+
+	}
+}

@@ -1,0 +1,109 @@
+#banner_supplier {
+	background-image: url("circles_supplier.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 100%;
+	min-height: 550px;
+	display: table;
+	.banner_content_supplier {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		h1 {
+			color: white;
+			letter-spacing: 5px;
+			font-size: 3.5rem;
+			margin: 0;
+			margin-top: 1em;
+			font-weight: 200;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+			
+		}
+	}
+}
+
+
+#product_view_supplier {
+	background-color: $light_gray;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 100%;
+	display: table;
+	padding-left: 1%;
+	.product_each_supplier {
+
+		text-align: center;
+		width: 33.3333%;
+		padding: 1rem;
+		float: left;
+		margin: 1.5rem;
+		width: 161px;
+		height: 161px;
+		border-radius: 50%;
+		border: 1px solid $gray-lighter;
+		background-color: #fff;
+		transition: .3s;
+		-webkit-transition: .2s;
+		-moz-transition: .2s;
+		-o-transition: .2s;
+		&:hover {
+			border: 1px solid $orange;
+			box-shadow: 0px 0px 37px -11px rgba(0,0,0,0.30);
+
+		}
+		
+		.product_image {
+			
+			padding-top: 0.5em;
+			
+
+			
+		}	
+
+	}
+}
+
+#callouts_supplier {
+	background-color: $orange;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 100%;
+	min-height: 300px;
+	display: table;
+	.callout_title_supplier {
+		p {
+			font-size: 3rem;
+			text-align: center;
+			font-weight: 200;
+			color: #fff;
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+			letter-spacing: 0.2rem;
+
+
+		}
+		
+	}
+	.callout_supplier {
+		text-align: center;
+		width: 33.3333%;
+		padding: 1.5rem 1%;
+		float: left;
+		h2 {
+			
+			color: #fff;
+			margin-bottom: 0;
+			font-size: 1.4rem;
+			font-weight: 300;
+			
+		}
+		p {
+			color: $light_gray;
+			font-size: 1rem;
+			font-weight: 300;
+
+		}
+	}
+}

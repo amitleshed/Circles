@@ -1,0 +1,21 @@
+= simple_form_for @product, html: { multipart: true } do |f|
+	.edit_product_inputs
+		.edit_product_input
+			= f.input :title, placeholder: "What's the name of your product?", required: false, label: false
+			= f.input :description, placeholder: "Description is everything.", required: false, label: false
+		.edit_product_input
+			= f.input :price, placeholder: "What's the price?", required: false, label: false
+			%br
+			= f.input :quantity, placeholder: "What's the quantity?", required: false, label: false
+			
+			.file_upload
+				%br
+				%p1 A picture is worth a thousand words.
+				= f.input :image, label: false
+			.product_category	
+				= f.collection_select :category_id, Category.all.order(:name), :id, :name, prompt: "Product Type"
+			
+	.edit_product_actions
+		= f.button :submit, class: "button"
+
+	

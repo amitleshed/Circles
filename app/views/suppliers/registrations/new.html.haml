@@ -1,0 +1,16 @@
+.signup_wrapper
+	%h4 Welcome Supplier!
+	.signup_inputs
+		= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+			.signup_input
+				= f.input :full_name, label: false, required: true, autofocus: true, placeholder: "Full Name"
+				= f.input :email, required: true, label: false, placeholder: "Email"
+				= f.input :password, required: true, label: false, placeholder: "Password"
+			.signup_actions
+				= f.button :submit, "Sign Up", class: "button6"
+			
+
+		
+
+	
+

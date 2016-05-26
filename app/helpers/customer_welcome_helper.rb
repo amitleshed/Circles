@@ -1,0 +1,2 @@
+module CustomerWelcomeHelper
+end

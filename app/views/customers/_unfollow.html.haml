@@ -1,0 +1,9 @@
+= form_for(current_customer.active_relationships.find_by(followed_id: @customer.id), 
+	html: { method: :delete }, remote: true) do |f|
+	= f.submit "Following", class: "button6"
+
+
+
+
+
+
